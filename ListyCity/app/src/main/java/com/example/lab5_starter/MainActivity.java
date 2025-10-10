@@ -129,6 +129,9 @@ public class MainActivity extends AppCompatActivity implements CityDialogFragmen
         // Update ArrayAdapter
         cityArrayAdapter.notifyDataSetChanged();
 
+        // Rehide the delete button until selected
+        deleteCityButton.setVisibility(View.INVISIBLE);
+
         // Reset flag
         selectedListElement = -1;
     }
